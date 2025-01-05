@@ -1,1 +1,2 @@
-This is a 3rd semester project from the course Design And Analysis of Algorithms.
+##Project Overview: Smart Train Transportation System
+This project, completed during my 3rd semester, demonstrates the application of advanced Data Structures and Algorithms (DSA) skills using C++. The Smart Train Transportation System is a comprehensive application designed to optimize train transportation by offering robust booking and navigation features. It caters to both users and administrators, ensuring efficiency and reliability. The project integrates key algorithmic principles and showcases the practical implementation of DSA concepts to solve real-world transportation challenges effectively.
