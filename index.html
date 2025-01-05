@@ -14,53 +14,80 @@
             padding: 0;
             color: #333;
         }
+
         header {
             background-color: #4CAF50;
             color: white;
             padding: 20px 10px;
             text-align: center;
         }
+
         h1 {
             margin: 0;
             font-size: 2.5em;
         }
+
         h2 {
             color: #4CAF50;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
         }
+
         .container {
-            width: 80%;
+            width: 90%;
             margin: auto;
-            overflow: hidden;
             padding: 20px;
+            overflow: hidden;
         }
+
         ul {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
-        li {
+
+        ul li {
             margin: 10px 0;
+            display: flex;
+            align-items: center;
         }
+
         a {
             text-decoration: none;
             color: #4CAF50;
             font-weight: bold;
         }
+
         a:hover {
             text-decoration: underline;
         }
+
         .icon {
             margin-right: 10px;
+            font-size: 1.2em;
+            color: #4CAF50;
         }
+
         section {
-            margin-bottom: 30px;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+
         .project {
             border: 1px solid #ccc;
             border-radius: 5px;
             padding: 15px;
-            margin-bottom: 15px;
-            background: #fff;
+            background: #f9f9f9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: white;
         }
     </style>
 </head>
@@ -73,19 +100,21 @@
         <!-- About Section -->
         <section id="about">
             <h2>About Me</h2>
-            <p>Hi! I am a student pursuing Btech in Computer Science (AI) from KLETCH University Belgaum. My SRN is : 02FE23BCI027 and this portfolio is regarding my 
-                3rd semester project under Priyanka Gavde Mam ,course instructor for Design and Analysis of Algorithms course.</p>
+            <p>
+                Hi! I am a student pursuing a BTech in Computer Science (AI) from KLETCH University, Belgaum. 
+                My SRN is <strong>02FE23BCI027</strong>, and this portfolio showcases my 3rd semester project under the guidance of <strong>Priyanka Gavde Ma'am</strong>, the course instructor for Design and Analysis of Algorithms.
+            </p>
         </section>
 
         <!-- Projects Section -->
         <section id="project">
             <h2>Project</h2>
             <div class="project">
-                <h3> : Smart Train Transportation System</h3>
-                <p>Built a smart train transportation application which utilises diverse algorithms and data structures.This project serves booking and navigation 
-                features both for user and admin purposes.</p>
-            </div>
-            
+                <h3><i class="fas fa-train icon"></i> Smart Train Transportation System</h3>
+                <p>
+                    Built a smart train transportation application that utilizes advanced algorithms and data structures.
+                    The project offers booking and navigation features for both user and admin purposes.
+                </p>
             </div>
         </section>
 
@@ -93,8 +122,8 @@
         <section id="skills">
             <h2>Skills</h2>
             <ul>
-                <li><i class="fas fa-code icon"></i> C++, HTML, CSS.</li>
-                <li><i class="fas fa-terminal icon"></i> Data Structures and Algorithms.</li>
+                <li><i class="fas fa-code icon"></i> C++, HTML, CSS</li>
+                <li><i class="fas fa-terminal icon"></i> Data Structures and Algorithms</li>
             </ul>
         </section>
 
@@ -103,11 +132,14 @@
             <h2>Contact</h2>
             <ul>
                 <li><i class="fab fa-linkedin icon"></i><a href="https://www.linkedin.com/in/vaibhavdeopa/">LinkedIn</a></li>
-                 <li><i class="fas fa-envelope icon"></i><a href="udaydeopa2023@gmail.com">VaibhavDeopa@example.com</a></li>
+                <li><i class="fas fa-envelope icon"></i><a href="mailto:udaydeopa2023@gmail.com">udaydeopa2023@gmail.com</a></li>
                 <li><i class="fas fa-phone-alt icon"></i><a href="tel:+91">+91 9389975860</a></li>
-                
             </ul>
         </section>
     </div>
+
+    <footer>
+        <p>&copy; 2025 Vaibhav Deopa. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
