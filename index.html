@@ -3,34 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Document</title>
+    <title>Portfolio</title>
+    <!-- Include Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
-        body{
-            background-color: white;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
         }
-
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        h2 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .icon {
+            margin-right: 10px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        .project {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+            background: #fff;
+        }
     </style>
-    
 </head>
 <body>
-    <h1>
-    Portfolio
-    </h1>
-    <p>
- <ul><li>
-    <a href="https://www.linkedin.com/in/vaibhavdeopa/">@LinkedIn</a>
-     </li>
-  <li>
-  <a href="https://leetcode.com/u/Vaibhav_deopa/">@Leetcode</a>
- </li>
- <li>
-    <a href="https://codeforces.com/profile/VaibhavDeopa">@Codeforces</a>
- </li>
-  <li>
-    <a href="tel:+91">9389975860</a>
-  </li>
- </ul>
-    </p>
+    <header>
+        <h1>Vaibhav Deopa - Portfolio</h1>
+    </header>
+
+    <div class="container">
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi! I am a passionate developer and student specializing in competitive programming, web development, and AI-based projects. I strive to learn, innovate, and build impactful solutions.</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1: AI Chat Application</h3>
+                <p>Built a real-time chat application using Flask, React, and WebSocket for seamless user interactions.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2: Online Portfolio Generator</h3>
+                <p>Developed a dynamic portfolio generator for developers using Node.js and Firebase.</p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><i class="fas fa-code icon"></i> C++, Python, JavaScript</li>
+                <li><i class="fas fa-terminal icon"></i> Backend Development: Flask, Node.js</li>
+                <li><i class="fas fa-tools icon"></i> Tools: Git, Docker</li>
+                <li><i class="fas fa-robot icon"></i> AI/ML Frameworks: TensorFlow, OpenCV</li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <ul>
+                <li><i class="fab fa-linkedin icon"></i><a href="https://www.linkedin.com/in/vaibhavdeopa/">LinkedIn</a></li>
+                <li><i class="fas fa-code icon"></i><a href="https://leetcode.com/u/Vaibhav_deopa/">Leetcode</a></li>
+                <li><i class="fas fa-gamepad icon"></i><a href="https://codeforces.com/profile/VaibhavDeopa">Codeforces</a></li>
+                <li><i class="fas fa-phone-alt icon"></i><a href="tel:+91">+91 9389975860</a></li>
+                <li><i class="fas fa-envelope icon"></i><a href="mailto:vaibhav.deopa@example.com">vaibhav.deopa@example.com</a></li>
+            </ul>
+        </section>
+    </div>
 </body>
 </html>
