@@ -1,132 +1,131 @@
-/* General Body Styling */
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f8f9fa;
+/* Reset default margin and padding */
+* {
     margin: 0;
     padding: 0;
-    color: #333;
-    line-height: 1.6;
+    box-sizing: border-box;
 }
 
-/* Header Styling */
-header {
-    background: linear-gradient(135deg, #4CAF50, #2F8F46);
-    color: white;
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px; /* Adding padding to the body to prevent sticking at the top */
+/*     display: flex; */
+    justify-content: center;
+    align-items: flex-start; /* Aligns content towards the top */
+    min-height: 100vh;
+}
+
+/* Main Container */
+section {
+    display: block;
+    background-color: white;
+    padding: 2rem;
+    width: 90%; 
+/*      width: 900px; */
+    max-width: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
     text-align: center;
-    padding: 30px 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 30px; /* Adding margin to ensure there's space from the top */
+    justify-content: center;
+}
+
+/* Header */
+header {
+/*     background-color: #4CAF50; */
+/*     width: 80% */
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    border-radius: 8px;
+/*     margin-bottom: 1.5rem; */
+    margin-bottom: 2.5rem;
+/*     max-width: 95%; */
+}
+
+header:hover {
+    transform: scaleX(1.0);
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 2rem;
     margin: 0;
-    text-transform: uppercase;
 }
 
-/* Container Styling */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 30px auto;
-    padding: 20px;
+header p {
+    margin: 1rem 0 0;
 }
 
-/* Section Styling */
-section {
-    margin-bottom: 40px;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
+/* Section Titles */
+h2 {
 
-section:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-section h2 {
     color: #4CAF50;
-    font-size: 2em;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #4CAF50;
-    padding-bottom: 5px;
-    display: inline-block;
+    margin-bottom: 1rem;
 }
 
-section p, ul {
-    font-size: 1.1em;
-    color: #555;
-    margin: 10px 0;
-}
-
-/* Project Card Styling */
-.project {
-    border: 2px solid #4CAF50;
-    border-radius: 10px;
-    padding: 15px;
-    background: #f0f9f3;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.project:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.project h3 {
-    font-size: 1.5em;
-    color: #2F8F46;
-    margin: 0;
-}
-
-.project p {
-    color: #333;
-}
-
-/* List and Icon Styling */
+/* List Items */
 ul {
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
 ul li {
-    margin: 15px 0;
-    display: flex;
-    align-items: center;
+    background-color: black;
+    color: white;
+/*     background-color: #e7f7e7; */
+    margin-bottom: 0.5rem;
+/*     padding: 0.75rem; */
+    padding: 2rem;
+    padding: 0.75rem;
+    border-radius: 5px;
+    text-align: justify;
 }
 
-.icon {
-    margin-right: 10px;
-    font-size: 1.5em;
-    color: #4CAF50;
-}
-
-/* Link Styling */
+/* Links */
 a {
+    color: #4CAF50;
     text-decoration: none;
-    color: #2F8F46;
     font-weight: bold;
-    transition: color 0.3s;
 }
 
 a:hover {
-    color: #1C6733;
     text-decoration: underline;
 }
 
-/* Footer Styling */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: linear-gradient(135deg, #4CAF50, #2F8F46);
-    color: white;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+/* Definition List */
+dl dt {
+    font-weight: bold;
+    color: #333;
+    margin-top: 1rem;
 }
 
-footer p {
-    margin: 0;
-    font-size: 1em;
+dl dd {
+    margin-left: 1.5rem;
+    color: #666;
+}
+
+/* Blockquote */
+blockquote {
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #4CAF50;
+    padding-left: 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    section {
+        padding: 1.5rem;
+    }
+
+    header {
+        padding: 1.5rem;
+    }
+}
+
+.top{
+    margin-bottom: 20px;
 }
